@@ -1,0 +1,58 @@
+.jumbotron {
+  background-image: url("../images/organizer.jpg");
+}
+
+.organizers {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.organizers img {
+  width: 200px;
+  border: 4px solid #dbdbdb;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.organizers .container {
+  min-width: 900px;
+}
+
+.organizers h3 {
+  margin-top: 30px;
+}
+
+.organizers .profile {
+  height: 220px;
+}
+
+.organizers .profile p {
+  width: 200px;
+  top: -160px;
+  position: relative;
+  visibility: hidden;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 8px;
+  display: block;
+}
+
+.organizers .profile:hover img{
+  filter: blur(5px); 
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px); 
+  -ms-filter: blur(5px);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
+}
+
+.organizers .profile:hover p {
+  visibility: visible;
+}
+
+.organizers p#right-align {
+  text-align: right;
+}

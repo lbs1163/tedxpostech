@@ -1,0 +1,102 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+.header {
+  border-bottom: 1px solid #dbdbdb;
+  min-width: 900px;
+}
+
+.header .container {
+  min-width: 900px;
+}
+
+.header a {
+  color: black;
+  font-size: 15px;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.header li {
+  display: inline;
+}
+
+.header ul {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.header #active a {
+  color: red;
+  font-weight: bold;
+}
+
+.jumbotron {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 70px;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+  left:50px;
+  min-width: 800px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-weight: bold;
+  margin-top: -80px;
+  text-shadow: rgba(0, 0, 0, 1) 3px 3px 5px;
+  max-width: 800px;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 1) 3px 3px 5px;
+  max-width: 800px;
+}
+
+p {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.logo {
+    width: 284px;
+    height: 80px;
+    margin: 0;
+    display: inline;
+}
+
+.footer {
+    min-width: 900px;
+}
+
+.footer .container {
+  min-width: 900px;
+}
+
+.footer p {
+  padding-top: 10px;
+  font-size: 11px;
+  color: grey;
+}
+
+.footer img {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+.footer a {
+  color: #333;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: #333;
+}

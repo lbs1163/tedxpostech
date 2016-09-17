@@ -1,0 +1,91 @@
+.jumbotron {
+  background-image: url("../images/register.jpg");
+}
+
+.register {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.register .container {
+  min-width: 900px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.register .glyphicon {
+  width: 60px;
+  height: 60px;
+  padding: 12px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 4px solid #dbdbdb;
+  color: #dbdbdb;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.register .schedule {
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+}
+
+.register .information {
+  margin-bottom: 60px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.register .info {
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "맑은 고딕", verdana, san-serif;
+  color: #999999;
+}
+
+.register .left {
+  border-right: 1px solid #dbdbdb;
+}
+
+.register a#available {
+  background-color: #FF4400;
+  border-color: red;
+  background-image: none;
+}
+
+.register a#notavailable {
+  background-color: grey;
+  border-color: grey;
+  background-image: none;
+}
+
+.register .schedule table th {
+  text-align: center;
+}
+
+.register .schedule table td {
+  text-align: center;
+}
+
+.register .schedule table tfoot td {
+  border: none;
+  text-align: left;
+  font-size: 12px;
+  padding: 3px;
+}
+
+.register .schedule table {
+  font-family: "맑은 고딕", verdana, san-serif;
+  font-size: 15px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: white;
+}
