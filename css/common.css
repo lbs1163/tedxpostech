@@ -1,15 +1,18 @@
-<<<<<<< HEAD
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+html {
+  min-width: 1000px;
+}
 
 /* HEADER */
 
 .header {
   border-bottom: 1px solid #dbdbdb;
-  min-width: 900px;
+  min-width: 1000px;
 }
 
 .header .container {
-  min-width: 900px;
+  min-width: 1000px;
 }
 
 .header a {
@@ -124,11 +127,11 @@ p {
 }
 
 .main .container {
-  min-width: 900px;
+  min-width: 1000px;
 }
 
 .main {
-  min-width: 900px;
+  min-width: 1000px;
   background-color: rgb(42,33,30);
 }
 
@@ -146,6 +149,7 @@ p {
   background-color: #f7f7f7;
   border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 60px;
 }
 
 .about .row {
@@ -196,13 +200,14 @@ p {
 /* SPEAKERS */
 
 .jumbotron#speakers {
-  background-image: url("../images/jumbotron/2015.jpg");
+  background-image: url("../images/jumbotron/speakers.jpg");
 }
 
 .speakers {
   background-color: #f7f7f7;
   border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 60px;
 }
 
 .speakers img {
@@ -221,8 +226,8 @@ p {
   border-bottom: 1px solid #dbdbdb;
 }
 
-.speakers .row#comingsoon {
-  border-bottom: 0px;
+.speakers .row.last {
+  border-bottom: none;
 }
 
 .speakers .container {
@@ -302,107 +307,133 @@ p {
 
 .organizers p#right-align {
   text-align: right;
-=======
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+}
 
-.header {
+/* SPONSOR */
+
+.jumbotron#sponsor {
+  background-image: url("../images/jumbotron/sponsors.png");
+}
+
+.sponsors {
+  background-color: white;
+  border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.sponsors .container {
   min-width: 900px;
 }
 
-.header .container {
-  min-width: 900px;
+.sponsors .thumbnail {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-.header a {
-  color: black;
+.sponsors .thumbnail img{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sponsors .container .row p {
+  font-size: 25px;
+  text-align: center;
+}
+
+/* REGISTER */
+
+.jumbotron#register {
+  background-image: url("../images/jumbotron/register.jpg");
+}
+
+.register {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 60px;
+}
+
+.register .container {
+  min-width: 900px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.register .glyphicon {
+  width: 60px;
+  height: 60px;
+  padding: 12px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 4px solid #dbdbdb;
+  color: #dbdbdb;
+  font-size: 30px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.register .schedule {
+  border-bottom: 1px solid #dbdbdb;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+}
+
+.register .information {
+  margin-bottom: 60px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.register .info {
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
   font-size: 15px;
-  padding: 14px 10px;
-  text-transform: uppercase;
-}
-
-.header li {
-  display: inline;
-}
-
-.header ul {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.header #active a {
-  color: red;
   font-weight: bold;
+  font-family: "맑은 고딕", verdana, san-serif;
+  color: #999999;
 }
 
-.jumbotron {
-  height: 500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-bottom: 70px;
+.register .left {
+  border-right: 1px solid #dbdbdb;
 }
 
-.jumbotron .container {
-  position: relative;
-  top:100px;
-  left:50px;
-  min-width: 800px;
+.register a#available {
+  background-color: #FF4400;
+  border-color: red;
+  background-image: none;
 }
 
-.jumbotron h1 {
-  color: #fff;
-  font-size: 48px;  
-  font-weight: bold;
-  margin-top: -80px;
-  text-shadow: rgba(0, 0, 0, 1) 3px 3px 5px;
-  max-width: 800px;
+.register a#notavailable {
+  background-color: grey;
+  border-color: grey;
+  background-image: none;
 }
 
-.jumbotron p {
-  font-size: 20px;
-  color: #fff;
-  text-shadow: rgba(0, 0, 0, 1) 3px 3px 5px;
-  max-width: 800px;
+.register .schedule table th {
+  text-align: center;
 }
 
-p {
-  font-family: 'Nanum Gothic', sans-serif;
+.register .schedule table td {
+  text-align: center;
 }
 
-.logo {
-    width: 284px;
-    height: 80px;
-    margin: 0;
-    display: inline;
+.register .schedule table tfoot td {
+  border: none;
+  text-align: left;
+  font-size: 12px;
+  padding: 3px;
 }
 
-.footer {
-    min-width: 900px;
+.register .schedule table {
+  font-family: "맑은 고딕", verdana, san-serif;
+  font-size: 15px;
 }
 
-.footer .container {
-  min-width: 900px;
-}
-
-.footer p {
-  padding-top: 10px;
-  font-size: 11px;
-  color: grey;
-}
-
-.footer img {
-  height: 15px;
-  width: 15px;
-  margin-right: 5px;
-}
-
-.footer a {
-  color: #333;
-}
-
-.footer a:hover {
-  text-decoration: none;
-  color: #333;
->>>>>>> 33c380bd0cec2cd7c37ac155b84f70529d750fea
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: white;
 }
