@@ -1,3 +1,308 @@
+<<<<<<< HEAD
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* HEADER */
+
+.header {
+  border-bottom: 1px solid #dbdbdb;
+  min-width: 900px;
+}
+
+.header .container {
+  min-width: 900px;
+}
+
+.header a {
+  color: black;
+  font-size: 15px;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.header li {
+  display: inline;
+}
+
+.header ul {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.header #active a {
+  color: red;
+  font-weight: bold;
+}
+
+.header .container ul.nav ul.dropdown-menu a {
+  text-transform: none;
+}
+
+p {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.logo {
+    width: 284px;
+    height: 80px;
+    margin: 0;
+    display: inline;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 70px;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+  left:50px;
+  min-width: 800px;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-weight: bold;
+  margin-top: -80px;
+  text-shadow: rgba(0, 0, 0, 1) 3px 3px 5px;
+  max-width: 800px;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 1) 3px 3px 5px;
+  max-width: 800px;
+}
+
+/* FOOTER */
+
+.footer {
+    min-width: 900px;
+}
+
+.footer .container {
+  min-width: 900px;
+}
+
+.footer p {
+  padding-top: 10px;
+  font-size: 11px;
+  color: grey;
+}
+
+.footer img {
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+.footer a {
+  color: #333;
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+/* INDEX */
+
+.main .container .jumbotron {
+  background-image: url("../images/index.png");
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0px;
+  background-position: center center;
+  height: 850px;
+}
+
+.main .container {
+  min-width: 900px;
+}
+
+.main {
+  min-width: 900px;
+  background-color: rgb(42,33,30);
+}
+
+.footer {
+  border-top: 1px solid #dbdbdb;
+}
+
+/* ABOUT */
+
+.jumbotron#about {
+  background-image: url("../images/jumbotron/about.jpg");
+}
+
+.about {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.about .row {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 20px;
+}
+
+.about .third {
+  border-bottom: none;
+}
+
+.about .container {
+  min-width: 900px;
+}
+
+.about div .thumbnail {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about .left {
+  border-right: 1px solid #dbdbdb;
+}
+
+.about .ted {
+  border-bottom: none;
+}
+
+/* PAST EVENTS */
+
+.jumbotron#y2015 {
+  background-image: url("../images/jumbotron/2015.jpg");
+}
+
+.theme {
+  border-top: 1px solid #dbdbdb;
+  background-color: #f7f7f7;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.organizers.past-organizers {
+  background-color: white;
+  border-bottom: none;
+}
+
+
+/* SPEAKERS */
+
+.jumbotron#speakers {
+  background-image: url("../images/jumbotron/2015.jpg");
+}
+
+.speakers {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.speakers img {
+  width: 200px;
+  border: 4px solid #dbdbdb;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.speakers .youtube{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.speakers .row {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.speakers .row#comingsoon {
+  border-bottom: 0px;
+}
+
+.speakers .container {
+  min-width: 900px;
+}
+
+.speakers h3 {
+  margin-top: 30px;
+}
+
+.speakers p {
+  margin-bottom: 20px;
+}
+
+.speakers .row#comingsoon h1 {
+  text-align: center;
+  vertical-align: center;
+  margin-top: 90px;
+}
+
+/* ORGANIZERS */
+
+.jumbotron#organizers {
+  background-image: url("../images/organizer.jpg");
+}
+
+.organizers {
+  background-color: #f7f7f7;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.organizers img {
+  width: 200px;
+  border: 4px solid #dbdbdb;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.organizers .container {
+  min-width: 900px;
+}
+
+.organizers h3 {
+  margin-top: 30px;
+}
+
+.organizers .profile {
+  height: 220px;
+}
+
+.organizers .profile p {
+  width: 200px;
+  top: -160px;
+  position: relative;
+  visibility: hidden;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 8px;
+  display: block;
+}
+
+.organizers .profile:hover img{
+  filter: blur(5px); 
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px); 
+  -ms-filter: blur(5px);
+  filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='5');
+}
+
+.organizers .profile:hover p {
+  visibility: visible;
+}
+
+.organizers p#right-align {
+  text-align: right;
+=======
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 .header {
@@ -99,4 +404,5 @@ p {
 .footer a:hover {
   text-decoration: none;
   color: #333;
+>>>>>>> 33c380bd0cec2cd7c37ac155b84f70529d750fea
 }

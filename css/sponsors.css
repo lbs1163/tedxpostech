@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .jumbotron {
   background-image: url("../images/sponsors.png");
 }
@@ -28,4 +29,36 @@
 .sponsors .container .row p {
 	font-size: 25px;
 	text-align: center;
+=======
+.jumbotron {
+  background-image: url("../images/sponsors.png");
+}
+
+.sponsors {
+  background-color: white;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.sponsors .container {
+  min-width: 900px;
+}
+
+.sponsors .thumbnail {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.sponsors .thumbnail img{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.sponsors .container .row p {
+	font-size: 25px;
+	text-align: center;
+>>>>>>> 33c380bd0cec2cd7c37ac155b84f70529d750fea
 }
