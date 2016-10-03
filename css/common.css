@@ -1,7 +1,13 @@
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
+/* GLOBAL */
+
 html {
   min-width: 1000px;
+}
+
+p {
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 /* HEADER */
@@ -38,10 +44,6 @@ html {
 
 .header .container ul.nav ul.dropdown-menu a {
   text-transform: none;
-}
-
-p {
-  font-family: 'Nanum Gothic', sans-serif;
 }
 
 .logo {
@@ -88,6 +90,7 @@ p {
 
 .footer {
     min-width: 900px;
+    border-top: 1px solid #dbdbdb;
 }
 
 .footer .container {
@@ -118,7 +121,7 @@ p {
 /* INDEX */
 
 .main .container .jumbotron {
-  background-image: url("../images/index.png");
+  background-image: url("../images/index.jpg");
   margin-bottom: 0;
   border: none;
   border-radius: 0px;
@@ -132,11 +135,7 @@ p {
 
 .main {
   min-width: 1000px;
-  background-color: rgb(42,33,30);
-}
-
-.footer {
-  border-top: 1px solid #dbdbdb;
+  background-color: black;
 }
 
 /* ABOUT */
@@ -252,7 +251,7 @@ p {
 /* ORGANIZERS */
 
 .jumbotron#organizers {
-  background-image: url("../images/jumbotron/organizer.png");
+  background-image: url("../images/jumbotron/organizer.jpg");
 }
 
 .organizers {
