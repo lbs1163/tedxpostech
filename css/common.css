@@ -183,6 +183,10 @@ p {
   background-image: url("../images/jumbotron/2015.jpg");
 }
 
+.jumbotron#y2011 {
+  background-image: url("../images/jumbotron/2011.jpg");
+}
+
 .theme {
   border-top: 1px solid #dbdbdb;
   background-color: #f7f7f7;
