@@ -426,6 +426,7 @@ p {
 
 .register .schedule table td {
   text-align: center;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .register .schedule table tfoot td {
