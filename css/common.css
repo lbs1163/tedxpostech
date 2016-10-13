@@ -10,6 +10,10 @@ p {
   font-family: 'Nanum Gothic', sans-serif;
 }
 
+.page-wrap {
+  min-height: 100%;
+}
+
 /* HEADER */
 
 .header {
@@ -89,7 +93,7 @@ p {
 /* FOOTER */
 
 .footer {
-    min-width: 900px;
+    min-width: 1000px;
     border-top: 1px solid #dbdbdb;
 }
 
@@ -120,22 +124,28 @@ p {
 
 /* INDEX */
 
-.main .container .jumbotron {
-  background-image: url("../images/index.jpg");
-  margin-bottom: 0;
-  border: none;
-  border-radius: 0px;
-  background-position: center center;
-  height: 850px;
-}
-
 .main .container {
+  height: 100vh;
+  min-height: 900px;
   min-width: 1000px;
 }
 
 .main {
   min-width: 1000px;
   background-color: black;
+}
+
+.img-wrapper {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+}
+
+.img-wrapper img {
+  margin-top: -448px;
+  margin-left: -500px;
 }
 
 /* ABOUT */
