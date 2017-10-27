@@ -189,6 +189,10 @@ p {
 
 /* PAST EVENTS */
 
+.jumbotron#y2016 {
+  background-image: url("../images/jumbotron/2016.png");
+}
+
 .jumbotron#y2015 {
   background-image: url("../images/jumbotron/2015.jpg");
 }
