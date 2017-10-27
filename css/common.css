@@ -125,7 +125,7 @@ p {
 /* INDEX */
 
 .main .container {
-  height: 734px;
+  height: 733px;
   min-width: 1000px;
 }
 
@@ -422,13 +422,13 @@ p {
   border-right: 1px solid #dbdbdb;
 }
 
-.register a#available {
+.register a.available {
   background-color: #FF4400;
   border-color: red;
   background-image: none;
 }
 
-.register a#notavailable {
+.register a.notavailable {
   background-color: grey;
   border-color: grey;
   background-image: none;
