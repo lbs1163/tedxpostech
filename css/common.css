@@ -125,8 +125,7 @@ p {
 /* INDEX */
 
 .main .container {
-  height: 100vh;
-  min-height: 900px;
+  height: 734px;
   min-width: 1000px;
 }
 
@@ -144,8 +143,9 @@ p {
 }
 
 .img-wrapper img {
-  margin-top: -448px;
+  margin-top: -367px;
   margin-left: -500px;
+  width: 1000px;
 }
 
 /* ABOUT */
