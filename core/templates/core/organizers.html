@@ -1,143 +1,91 @@
-<!DOCTYPE html>
-<html lang="ko">
+{% extends 'core/base.html' %}
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% load static %}
 
-    <title>2017 TEDxPOSTECH</title>
+{% block main %}
 
-    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <script src="./bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
-    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="./css/common.css">
-    <link href="https://tedcdnpa-a.akamaihd.net/favicon.ico" rel="shortcut icon">
-  </head>
-          
-
-  <body>
-    <div class="header">
-      <div class="container">
-        <div class="logo">
-          <a href="index.html"><img src="./images/logo.png"></a>
-        </div>
-        <ul class="pull-right nav nav-pills">
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Past Event <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="2016.html">2016 TEDxPOSTECH</a></li>
-              <li><a href="2015.html">2015 TEDxPOSTECH</a></li>
-              <li><a href="2011.html">2011 TEDxPOSTECH</a></li>
-            </ul>
-          </li>
-          <li><a href="speakers.html">Speakers</a></li>
-          <li id="active"><a href="organizers.html">Organizers</a></li>
-          <li><a href="sponsors.html">Sponsors</a></li>
-          <li><a href="register.html">Register</a></li>
-        </ul>
-      </div>
+<main>
+  <div class="jumbotron" id="organizers">
+    <div class="container">
+      <h1>Organizers</h1>
+      <p>2017 TEDxPOSTECH을 준비한 8명의 4th Organizer들을 소개합니다.</p>
     </div>
+  </div>
 
-    <div class="jumbotron" id="organizers">
-      <div class="container">
-        <h1>Organizers</h1>
-        <p>2017 TEDxPOSTECH을 준비한 8명의 4th Organizer들을 소개합니다.</p>
-      </div>
-    </div>
+  <div class="organizers">
+    <div class="container">
 
-    <div class="organizers">
-      <div class="container">
-
-        <div class="row">
+      <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-10">
+          <h3>Message from TEDxPOSTECH 4th Organizers</h3>
+          <p>안녕하세요. TEDxPOSTECH 네 번째 행사의 사회자를 맡게 된 김정수입니다.</p>
+          <p>Ideas worth spreading, 바로 TED의 모토입니다. 저희는 지난 TEDxPOSTECH 행사가 건네준 가치 있는 아이디어에 감명을 받아서, 또는 지난 행사에 참여하지는 못했지만 TED 자체에 흥미와 열정을 가지고 이번 네 번째 Organizer에 지원하였습니다. 저마다 다른 생각을 가지고 시작했지만, TED의 모토가 말하듯 가치 있는 아이디어를 교내 학우분들에게 들려주고 싶고 퍼트리고 싶다는 하나의 뜻으로 뭉쳤습니다. 긴 시간 동안 정성을 들여 본 행사를 준비했습니다. 이제 여러분에게 그 결과를 보여줄 수 있어서 정말 영광스럽고 기대가 됩니다.</p>
+          <p>이번 행사의 큰 주제는 바로 FLUX입니다. 그 사전적 의미는 유동, 흐름, 끊임없는 변화이지만 공대생이라면 단위시간당 수직이동하는 물리량을 의미하는 개념을 생각할 수도 있겠습니다. 저희는 FLUX의 의미 중에서도 ‘끊임없는 소통과 연결’ 에 초점을 두고 있습니다. 사람과 사람의 연결, 매체를 통한 소통, 내면과의 소통 등 소통의 수단과 다양화라는 주제를 관통하는 가치 있는 아이디어를 여러 분야의 연사 분들을 통해 제공하고자 합니다.</p>
+          <p>올해 11월 4일 토요일, 네 번째 TEDxPOSTECH에서 준비한 아이디어와 소통으로 여러분이 조금이라도 변화를 맞이할 계기가 될 수 있다면 저희에겐 아주 가치 있는 일이 될 것입니다.</p>
+          <p>감사합니다.</p>
+          <p id="right-align">TEDxPOSTECH 4th Organizer</p>
+          <p id="right-align">일동 올림.</p>
           <div class="col-xs-1"></div>
-          <div class="col-xs-10">
-            <h3>Message from TEDxPOSTECH 4th Organizers</h3>
-            <p>안녕하세요. TEDxPOSTECH 네 번째 행사의 사회자를 맡게 된 김정수입니다.</p>
-            <p>Ideas worth spreading, 바로 TED의 모토입니다. 저희는 지난 TEDxPOSTECH 행사가 건네준 가치 있는 아이디어에 감명을 받아서, 또는 지난 행사에 참여하지는 못했지만 TED 자체에 흥미와 열정을 가지고 이번 네 번째 Organizer에 지원하였습니다. 저마다 다른 생각을 가지고 시작했지만, TED의 모토가 말하듯 가치 있는 아이디어를 교내 학우분들에게 들려주고 싶고 퍼트리고 싶다는 하나의 뜻으로 뭉쳤습니다. 긴 시간 동안 정성을 들여 본 행사를 준비했습니다. 이제 여러분에게 그 결과를 보여줄 수 있어서 정말 영광스럽고 기대가 됩니다.</p>
-            <p>이번 행사의 큰 주제는 바로 FLUX입니다. 그 사전적 의미는 유동, 흐름, 끊임없는 변화이지만 공대생이라면 단위시간당 수직이동하는 물리량을 의미하는 개념을 생각할 수도 있겠습니다. 저희는 FLUX의 의미 중에서도 ‘끊임없는 소통과 연결’ 에 초점을 두고 있습니다. 사람과 사람의 연결, 매체를 통한 소통, 내면과의 소통 등 소통의 수단과 다양화라는 주제를 관통하는 가치 있는 아이디어를 여러 분야의 연사 분들을 통해 제공하고자 합니다.</p>
-            <p>올해 11월 4일 토요일, 네 번째 TEDxPOSTECH에서 준비한 아이디어와 소통으로 여러분이 조금이라도 변화를 맞이할 계기가 될 수 있다면 저희에겐 아주 가치 있는 일이 될 것입니다.</p>
-            <p>감사합니다.</p>
-            <p id="right-align">TEDxPOSTECH 4th Organizer</p>
-            <p id="right-align">일동 올림.</p>
-            <div class="col-xs-1"></div>
-          </div>
         </div>
-
-        <div class="row">
-          <div class="col-xs-3">
-            <div class="profile center-block">
-              <img src="./images/organizers/2017/rhdghkstjr.jpg" class="img-circle center-block">
-              <p class="center-block">공환석<br>LIFE 16</p>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <div class="profile center-block">
-              <img src="./images/organizers/2017/rlawjdtn.jpg" class="img-circle center-block">
-              <p class="center-block">김정수<br>PCE 16</p>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <div class="profile center-block">
-              <img src="./images/organizers/2017/dbscofla.jpg" class="img-circle center-block">
-              <p class="center-block">윤채림<br>LIFE 16</p>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <div class="profile center-block">
-              <img src="./images/organizers/2017/dlwngus.jpg" class="img-circle center-block">
-              <p class="center-block">이주현<br>LIFE 16</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row" id="last">
-          <div class="col-xs-3">
-            <div class="profile center-block">
-              <img src="./images/organizers/2017/dlghwjd.jpg" class="img-circle center-block">
-              <p class="center-block">이호정<br>CHEM 15</p>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <div class="profile center-block">
-              <img src="./images/organizers/2017/dlawnsdud.jpg" class="img-circle center-block">
-              <p class="center-block">임준영<br>ME 16</p>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <div class="profile center-block">
-              <img src="./images/organizers/2017/chltnwl.jpg" class="img-circle center-block">
-              <p class="center-block">최수지<br>LIFE 16</p>
-            </div>
-          </div>
-          <div class="col-xs-3">
-            <div class="profile center-block">
-              <img src="./images/organizers/2017/chlgPdnjs.jpg" class="img-circle center-block">
-              <p class="center-block">최혜원<br>LIFE 16</p>
-            </div>
-          </div>
-        </div>
-
       </div>
-    </div>
 
-    <div class="footer">
-      <div class="container">
-        <p class="pull-left">※This independent TEDx event is operated under license from TED.</p>
-        <p class="pull-right"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> tedx.postech.organizer@gmail.com</p>
+      <div class="row">
+        <div class="col-xs-3">
+          <div class="profile center-block">
+            <img src="./images/organizers/2017/rhdghkstjr.jpg" class="img-circle center-block">
+            <p class="center-block">공환석<br>LIFE 16</p>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="profile center-block">
+            <img src="./images/organizers/2017/rlawjdtn.jpg" class="img-circle center-block">
+            <p class="center-block">김정수<br>PCE 16</p>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="profile center-block">
+            <img src="./images/organizers/2017/dbscofla.jpg" class="img-circle center-block">
+            <p class="center-block">윤채림<br>LIFE 16</p>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="profile center-block">
+            <img src="./images/organizers/2017/dlwngus.jpg" class="img-circle center-block">
+            <p class="center-block">이주현<br>LIFE 16</p>
+          </div>
+        </div>
       </div>
+
+      <div class="row" id="last">
+        <div class="col-xs-3">
+          <div class="profile center-block">
+            <img src="./images/organizers/2017/dlghwjd.jpg" class="img-circle center-block">
+            <p class="center-block">이호정<br>CHEM 15</p>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="profile center-block">
+            <img src="./images/organizers/2017/dlawnsdud.jpg" class="img-circle center-block">
+            <p class="center-block">임준영<br>ME 16</p>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="profile center-block">
+            <img src="./images/organizers/2017/chltnwl.jpg" class="img-circle center-block">
+            <p class="center-block">최수지<br>LIFE 16</p>
+          </div>
+        </div>
+        <div class="col-xs-3">
+          <div class="profile center-block">
+            <img src="./images/organizers/2017/chlgPdnjs.jpg" class="img-circle center-block">
+            <p class="center-block">최혜원<br>LIFE 16</p>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
+</main>
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-68683638-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-	
-  </body>
-</html>
+{% endblock %}

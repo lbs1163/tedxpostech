@@ -1,251 +1,196 @@
-<!DOCTYPE html>
-<html lang="ko">
+{% extends 'core/base.html' %}
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+{% load static %}
 
-    <title>2017 TEDxPOSTECH</title>
-
-    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
-    <script src="./bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
-    <script src="./bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
-    <link rel="stylesheet" href="./css/common.css">
-    <link href="https://tedcdnpa-a.akamaihd.net/favicon.ico" rel="shortcut icon">
-  </head>
-          
-
-  <body>
-    <div class="header">
-      <div class="container">
-        <div class="logo">
-          <a href="index.html"><img src="./images/logo.png"></a>
-        </div>
-        <ul class="pull-right nav nav-pills">
-          <li><a href="about.html">About</a></li>
-          <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Past Event <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="2016.html">2016 TEDxPOSTECH</a></li>
-              <li><a href="2015.html">2015 TEDxPOSTECH</a></li>
-              <li><a href="2011.html">2011 TEDxPOSTECH</a></li>
-            </ul>
-          </li>
-          <li><a href="speakers.html">Speakers</a></li>
-          <li><a href="organizers.html">Organizers</a></li>
-          <li id="active"><a href="sponsors.html">Sponsors</a></li>
-          <li><a href="register.html">Register</a></li>
-        </ul>
-      </div>
+{% block main %}
+<main>
+  <div class="jumbotron" id="sponsor">
+    <div class="container">
+      <h1>Sponsors</h1>
+      <p>행사 진행에 도움을 주신 다양한 스폰서들을 소개합니다.</p>
     </div>
+  </div>
 
-    <div class="jumbotron" id="sponsor">
-      <div class="container">
-        <h1>Sponsors</h1>
-        <p>행사 진행에 도움을 주신 다양한 스폰서들을 소개합니다.</p>
+  <div class="sponsors">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-xs-2"></div>
+
+        <div class="col-xs-8">
+          <div class="thumbnail center-block" id="biglogo">
+            <img src="./images/biglogo.png">
+          </div>
+        </div>
+
+        <div class="col-xs-2"></div>
+
       </div>
-    </div>
 
-    <div class="sponsors">
-      <div class="container">
+      <div class="row">
 
-        <div class="row">
-
-          <div class="col-xs-2"></div>
-
-          <div class="col-xs-8">
-            <div class="thumbnail center-block" id="biglogo">
-              <img src="./images/biglogo.png">
-            </div>
-          </div>
-
-          <div class="col-xs-2"></div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="col-xs-12">
-            <p>with</p><br>
-          </div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="col-xs-3"></div>
-
-          <div class="col-xs-6">
-            <div class="thumbnail center-block">
-              <a target="_blank" href="https://www.pentasecurity.com/?lang=ko">
-                <img src="./images/sponsors/2017/pentasecurity.png">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-xs-3"></div>
-          
-        </div>
-
-        <div class="row">
-
-          <div class="col-xs-2"></div>
-
-          <div class="col-xs-4">
-            <div class="thumbnail center-block">
-              <a target="_blank" href="http://aif.postech.ac.kr/">
-                <img src="./images/sponsors/2017/ec.png">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-xs-4">
-            <div class="thumbnail center-block">
-              <img src="./images/sponsors/2017/eedc.png">
-            </div>
-          </div>
-
-          <div class="col-xs-2"></div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="col-xs-2"></div>
-
-          <div class="col-xs-4">
-            <div class="thumbnail center-block">
-              <a target="_blank" href="http://postechholdings.com/">
-                <img src="./images/sponsors/2017/gjjh.jpg">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-xs-4">
-            <div class="thumbnail center-block">
-              <a target="_blank" href="https://www.facebook.com/postechstu">
-                <img src="./images/sponsors/2017/neonadeuli.png">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-xs-2"></div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="col-xs-3">
-            <div class="thumbnail center-block">
-              <a target="_blank" href="https://www.facebook.com/PoApper/?fref=ts">
-                <img src="./images/sponsors/2017/poapper.png">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-xs-3">
-            <div class="thumbnail center-block">
-              <a target="_blank" href="https://www.facebook.com/postechpbs/?fref=ts">
-                <img src="./images/sponsors/2017/pbs.png">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-xs-3">
-            <div class="thumbnail center-block">
-              <a target="_blank" href="https://www.mrpizza.co.kr/">
-                <img src="./images/sponsors/2017/mrpizza.png">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-xs-3">
-            <div class="thumbnail center-block">
-              <a target="_blank" href="https://www.facebook.com/AgitPohang/?fref=ts">
-                <img src="./images/sponsors/2017/agit.jpg">
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row">
-
-          <div class="col-xs-2"></div>
-
-          <div class="col-xs-6">
-
-            <div class="row">
-
-              <div class="col-xs-12">
-                <div class="thumbnail center-block">
-                  <a target="_blank" href="https://www.twosome.co.kr:7009/microsite/2016/autumn/intro.asp">
-                    <img src="./images/sponsors/2017/twosome.jpg">
-                  </a>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="row">
-
-              <div class="col-xs-4">
-                <div class="thumbnail center-block">
-                  <a target="_blank" href="http://www.momstouch.co.kr">
-                    <img src="./images/sponsors/2017/momstouch.png">
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-xs-4">
-                <div class="thumbnail center-block">
-                  <a target="_blank" href="http://www.codd.co.kr/">
-                    <img src="./images/sponsors/2017/ddangddang.png">
-                  </a>
-                </div>
-              </div>
-
-              <div class="col-xs-4">
-                <div class="thumbnail center-block">
-                    <img class="img-responsive" src="./images/sponsors/2017/aulete.jpg">
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-xs-2">
-            <div class="thumbnail center-block">
-              <img src="./images/sponsors/2017/ocelot.png">
-            </div>
-          </div>
-
-          <div class="col-xs-2"></div>
-
+        <div class="col-xs-12">
+          <p>with</p><br>
         </div>
 
       </div>
-    </div>
 
-    <div class="footer">
-      <div class="container">
-        <p class="pull-left">※This independent TEDx event is operated under license from TED.</p>
-        <p class="pull-right"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> tedx.postech.organizer@gmail.com</p>
+      <div class="row">
+
+        <div class="col-xs-3"></div>
+
+        <div class="col-xs-6">
+          <div class="thumbnail center-block">
+            <a target="_blank" href="https://www.pentasecurity.com/?lang=ko">
+              <img src="./images/sponsors/2017/pentasecurity.png">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xs-3"></div>
+        
       </div>
+
+      <div class="row">
+
+        <div class="col-xs-2"></div>
+
+        <div class="col-xs-4">
+          <div class="thumbnail center-block">
+            <a target="_blank" href="http://aif.postech.ac.kr/">
+              <img src="./images/sponsors/2017/ec.png">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xs-4">
+          <div class="thumbnail center-block">
+            <img src="./images/sponsors/2017/eedc.png">
+          </div>
+        </div>
+
+        <div class="col-xs-2"></div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-xs-2"></div>
+
+        <div class="col-xs-4">
+          <div class="thumbnail center-block">
+            <a target="_blank" href="http://postechholdings.com/">
+              <img src="./images/sponsors/2017/gjjh.jpg">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xs-4">
+          <div class="thumbnail center-block">
+            <a target="_blank" href="https://www.facebook.com/postechstu">
+              <img src="./images/sponsors/2017/neonadeuli.png">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xs-2"></div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-xs-3">
+          <div class="thumbnail center-block">
+            <a target="_blank" href="https://www.facebook.com/PoApper/?fref=ts">
+              <img src="./images/sponsors/2017/poapper.png">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xs-3">
+          <div class="thumbnail center-block">
+            <a target="_blank" href="https://www.facebook.com/postechpbs/?fref=ts">
+              <img src="./images/sponsors/2017/pbs.png">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xs-3">
+          <div class="thumbnail center-block">
+            <a target="_blank" href="https://www.mrpizza.co.kr/">
+              <img src="./images/sponsors/2017/mrpizza.png">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-xs-3">
+          <div class="thumbnail center-block">
+            <a target="_blank" href="https://www.facebook.com/AgitPohang/?fref=ts">
+              <img src="./images/sponsors/2017/agit.jpg">
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-xs-2"></div>
+
+        <div class="col-xs-6">
+
+          <div class="row">
+
+            <div class="col-xs-12">
+              <div class="thumbnail center-block">
+                <a target="_blank" href="https://www.twosome.co.kr:7009/microsite/2016/autumn/intro.asp">
+                  <img src="./images/sponsors/2017/twosome.jpg">
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-xs-4">
+              <div class="thumbnail center-block">
+                <a target="_blank" href="http://www.momstouch.co.kr">
+                  <img src="./images/sponsors/2017/momstouch.png">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xs-4">
+              <div class="thumbnail center-block">
+                <a target="_blank" href="http://www.codd.co.kr/">
+                  <img src="./images/sponsors/2017/ddangddang.png">
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xs-4">
+              <div class="thumbnail center-block">
+                <img class="img-responsive" src="./images/sponsors/2017/aulete.jpg">
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-xs-2">
+          <div class="thumbnail center-block">
+            <img src="./images/sponsors/2017/ocelot.png">
+          </div>
+        </div>
+
+        <div class="col-xs-2"></div>
+
+      </div>
+
     </div>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-68683638-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-	
-  </body>
-</html>
+  </div>
+</main>
+{% endblock %}
