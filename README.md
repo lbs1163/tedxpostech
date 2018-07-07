@@ -12,6 +12,7 @@
 
 ### pip list
 * django==2.0.7
+* Pillow==5.2.0
 
 ## Deploy Process
 * 우선 깃에서 변경사항을 다운로드 받아옴  
