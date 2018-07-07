@@ -1,0 +1,30 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* GLOBAL */
+
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* HEADER */
+
+header a {
+  color: black !important;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+header a.nav-link.active {
+    font-weight: bold;
+    color: red !important;
+}
+
+header .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 4px;
+}
+
+header > nav li > a:focus, header > nav li > a:hover {
+    background-color: #eee;
+}
