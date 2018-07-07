@@ -6,6 +6,10 @@
   font-family: 'Nanum Gothic', sans-serif;
 }
 
+h1 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 /* HEADER */
 
 header a {
@@ -33,4 +37,57 @@ header > nav li > a:focus, header > nav li > a:hover {
 
 footer {
     font-size: 11px;
+}
+
+/* JUMBOTRON */
+
+.jumbotron {
+    padding: 4rem 1rem 20rem 1rem;
+    color: white;
+    text-shadow: rgba(0, 0, 0, 1) 3px 3px 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotron h1 {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+    .jumbotron h1 {
+        font-size: 35px;
+    }
+}
+
+.jumbotron#about {
+  background-image: url("/static/core/images/jumbotron/about.jpg");
+}
+
+.jumbotron#speakers {
+  background-image: url("/static/core/images/jumbotron/speakers.jpg");
+}
+
+.jumbotron#organizers {
+  background-image: url("/static/core/images/jumbotron/organizer.jpg");
+}
+
+.jumbotron#sponsor {
+  background-image: url("/static/core/images/jumbotron/sponsors.png");
+}
+
+.jumbotron#register {
+  background-image: url("/static/core/images/jumbotron/register.jpg");
+}
+
+.jumbotron#y2016 {
+  background-image: url("/static/core/images/jumbotron/2016.png");
+}
+
+.jumbotron#y2015 {
+  background-image: url("/static/core/images/jumbotron/2015.jpg");
+}
+
+.jumbotron#y2011 {
+  background-image: url("/static/core/images/jumbotron/2011.jpg");
 }
