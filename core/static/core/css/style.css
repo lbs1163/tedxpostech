@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(/static/core/fonts/nanumgothic.css);
 
 /* GLOBAL */
 
@@ -27,4 +27,10 @@ header .navbar-expand-lg .navbar-nav .nav-link {
 
 header > nav li > a:focus, header > nav li > a:hover {
     background-color: #eee;
+}
+
+/* FOOTER */
+
+footer {
+    font-size: 11px;
 }
