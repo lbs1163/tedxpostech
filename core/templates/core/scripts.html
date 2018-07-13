@@ -11,3 +11,11 @@
 
   gtag('config', 'UA-68683638-1');
 </script>
+
+<script>
+    $('.back-to-top').click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({scrollTop: 0}, 300);
+        return false;
+    });
+</script>

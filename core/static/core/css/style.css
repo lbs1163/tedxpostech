@@ -95,6 +95,24 @@ header > nav li > a:focus, header > nav li > a:hover {
   background-color: transparent;
 }
 
+.back-to-top {
+  background: none;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  z-index: 100;
+  color: rgb(255, 43, 6);
+}
+
+.back-to-top:hover {
+  color: rgb(255, 43, 6);
+}
+
+.back-to-top i {
+  font-size: 50px;
+}
+
 /* FOOTER */
 
 footer {

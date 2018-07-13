@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '918x5%ho-3sf(wbyen4$l(9w5jv3vd3_7leb&fe-7wx*(8(xa%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['tedx.postech.ac.kr']
+ALLOWED_HOSTS = ['localhost', 'tedx.postech.ac.kr']
 
 
 # Application definition
