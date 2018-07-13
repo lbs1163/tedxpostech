@@ -28,7 +28,7 @@ class Event(models.Model):
     year = models.PositiveSmallIntegerField()
     order = models.PositiveSmallIntegerField()
     date = models.DateField()
-    place = models.CharField(max_length=50)
+    place = models.TextField(null=True, blank=True)
     start_at = models.TimeField()
     end_at = models.TimeField()
     fee = models.PositiveSmallIntegerField()

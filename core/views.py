@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import *
+import datetime
 
 def home(request):
     setting = Setting.objects.all().first()
@@ -31,4 +32,6 @@ def sponsors(request):
 def register(request):
     setting = Setting.objects.all().first()
     event = setting.event_now
-    return render(request, "core/register.html", {'event': event})
+    t = ['월', '화', '수', '목', '금', '토', '일']
+    day = t[event.date.weekday()]
+    return render(request, "core/register.html", {'event': event, 'day': day})
