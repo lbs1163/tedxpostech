@@ -2,7 +2,8 @@ from django.shortcuts import render
 from .models import *
 
 def home(request):
-	return render(request, "core/home.html", {})
+    setting = Setting.objects.all().first()
+    return render(request, "core/home.html", {'setting': setting})
 
 def about(request):
     return render(request, "core/about.html", {})
