@@ -1,0 +1,266 @@
+[
+{
+    "model": "core.organizer",
+    "pk": 1,
+    "fields": {
+        "name": "\uacf5\ud658\uc11d",
+        "event": 1,
+        "image": "organizers/rhdghkstjr.jpg",
+        "department": 4,
+        "entered_year": 16
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 2,
+    "fields": {
+        "name": "\uae40\uc815\uc218",
+        "event": 1,
+        "image": "organizers/rlawjdtn.jpg",
+        "department": 10,
+        "entered_year": 16
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 3,
+    "fields": {
+        "name": "\uc724\ucc44\ub9bc",
+        "event": 1,
+        "image": "organizers/dbscofla.jpg",
+        "department": 4,
+        "entered_year": 16
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 4,
+    "fields": {
+        "name": "\uc774\uc8fc\ud604",
+        "event": 1,
+        "image": "organizers/dlwngus.jpg",
+        "department": 4,
+        "entered_year": 16
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 5,
+    "fields": {
+        "name": "\uc774\ud638\uc815",
+        "event": 1,
+        "image": "organizers/dlghwjd.jpg",
+        "department": 3,
+        "entered_year": 15
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 6,
+    "fields": {
+        "name": "\uc784\uc900\uc601",
+        "event": 1,
+        "image": "organizers/dlawnsdud.jpg",
+        "department": 5,
+        "entered_year": 16
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 7,
+    "fields": {
+        "name": "\ucd5c\uc218\uc9c0",
+        "event": 1,
+        "image": "organizers/chltnwl.jpg",
+        "department": 4,
+        "entered_year": 16
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 8,
+    "fields": {
+        "name": "\ucd5c\ud61c\uc6d0",
+        "event": 1,
+        "image": "organizers/chlgPdnjs.jpg",
+        "department": 4,
+        "entered_year": 16
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 9,
+    "fields": {
+        "name": "\uac15\ud55c\uc194",
+        "event": 2,
+        "image": "organizers/rkdgksthf.jpg",
+        "department": 4,
+        "entered_year": 15
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 10,
+    "fields": {
+        "name": "\uae40\uc601\ucc44",
+        "event": 2,
+        "image": "organizers/rladudco.jpg",
+        "department": 8,
+        "entered_year": 15
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 11,
+    "fields": {
+        "name": "\uae40\ucc44\uc724",
+        "event": 2,
+        "image": "organizers/rlacodbs.jpg",
+        "department": 2,
+        "entered_year": 15
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 12,
+    "fields": {
+        "name": "\uc774\ubbfc\uacbd",
+        "event": 2,
+        "image": "organizers/dlalsrud.jpg",
+        "department": 6,
+        "entered_year": 15
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 13,
+    "fields": {
+        "name": "\uc774\uc6a9\uc6b0",
+        "event": 2,
+        "image": "organizers/dldyddn.jpg",
+        "department": 8,
+        "entered_year": 14
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 14,
+    "fields": {
+        "name": "\uc784\ub3d9\ud604",
+        "event": 2,
+        "image": "organizers/dlaehdgus.jpg",
+        "department": 5,
+        "entered_year": 14
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 15,
+    "fields": {
+        "name": "\ucd5c\uc0c1\ubc94",
+        "event": 2,
+        "image": "organizers/chltkdqja.png",
+        "department": 8,
+        "entered_year": 15
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 16,
+    "fields": {
+        "name": "\ud64d\uc778\uc8fc",
+        "event": 2,
+        "image": "organizers/ghddlswn.jpg",
+        "department": 10,
+        "entered_year": 15
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 17,
+    "fields": {
+        "name": "\uc724\uc9c4\ud601",
+        "event": 3,
+        "image": "organizers/dbswlsgur.jpg",
+        "department": 5,
+        "entered_year": 14
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 18,
+    "fields": {
+        "name": "\uac15\uc9c0\uc6b0",
+        "event": 3,
+        "image": "organizers/rkdwldn.jpg",
+        "department": 4,
+        "entered_year": 7
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 19,
+    "fields": {
+        "name": "\uad8c\uc740\uc9c0",
+        "event": 3,
+        "image": "organizers/rnjsdmswl.jpg",
+        "department": 1,
+        "entered_year": 13
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 20,
+    "fields": {
+        "name": "\ubc15\uc2dc\uc740",
+        "event": 3,
+        "image": "organizers/qkrtldms.jpg",
+        "department": 8,
+        "entered_year": 14
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 21,
+    "fields": {
+        "name": "\uc720\uc7ac\uc6d0",
+        "event": 3,
+        "image": "organizers/dbwodnjs.jpg",
+        "department": 1,
+        "entered_year": 13
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 22,
+    "fields": {
+        "name": "\uc774\uc2dc\uc6b0",
+        "event": 3,
+        "image": "organizers/dltldn.jpg",
+        "department": 1,
+        "entered_year": 13
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 23,
+    "fields": {
+        "name": "\uc774\uc885\uac74",
+        "event": 3,
+        "image": "organizers/dlwhdrjs.jpg",
+        "department": 8,
+        "entered_year": 14
+    }
+},
+{
+    "model": "core.organizer",
+    "pk": 24,
+    "fields": {
+        "name": "\uc784\ubc94\uc218",
+        "event": 3,
+        "image": "organizers/dlaqjatn.jpg",
+        "department": 9,
+        "entered_year": 14
+    }
+}
+]

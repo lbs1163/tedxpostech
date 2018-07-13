@@ -1,0 +1,200 @@
+[
+{
+    "model": "core.sponsor",
+    "pk": 1,
+    "fields": {
+        "name": "\ud39c\ud0c0\uc2dc\ud050\ub9ac\ud2f0",
+        "image": "sponsors/pentasecurity.png",
+        "website_url": "https://www.pentasecurity.com/?lang=ko"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 2,
+    "fields": {
+        "name": "\ud3ec\uc2a4\ud14d\uae30\uc5c5\uac00\uc13c\ud130",
+        "image": "sponsors/ec.png",
+        "website_url": "http://aif.postech.ac.kr/"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 3,
+    "fields": {
+        "name": "\ud3ec\uc2a4\ud14d\uae30\uc220\ucc3d\uc5c5\uad50\uc721\uc13c\ud130",
+        "image": "sponsors/eedc.png",
+        "website_url": null
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 4,
+    "fields": {
+        "name": "\ud3ec\uc2a4\ud14d\uae30\uc220\uc9c0\uc8fc\ud68c\uc0ac",
+        "image": "sponsors/gjjh.jpg",
+        "website_url": "http://postechholdings.com/"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 5,
+    "fields": {
+        "name": "\uc81c31\ub300 \ucd1d\ud559\uc0dd\ud68c \ub108\ub098\ub4e4\uc774",
+        "image": "sponsors/neonadeuli.png",
+        "website_url": "https://www.facebook.com/postechstu"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 6,
+    "fields": {
+        "name": "\ud3ec\uc560\ud37c",
+        "image": "sponsors/poapper.png",
+        "website_url": "https://www.facebook.com/PoApper/?fref=ts"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 7,
+    "fields": {
+        "name": "PBS",
+        "image": "sponsors/pbs.png",
+        "website_url": "https://www.facebook.com/postechpbs/?fref=ts"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 8,
+    "fields": {
+        "name": "\ubbf8\uc2a4\ud130\ud53c\uc790",
+        "image": "sponsors/mrpizza.png",
+        "website_url": "https://www.mrpizza.co.kr/"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 9,
+    "fields": {
+        "name": "\uc544\uc9c0\ud2b8",
+        "image": "sponsors/agit.jpg",
+        "website_url": "https://www.facebook.com/AgitPohang/?fref=ts"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 10,
+    "fields": {
+        "name": "\ud22c\uc378\ud50c\ub808\uc774\uc2a4",
+        "image": "sponsors/twosome.jpg",
+        "website_url": "https://www.twosome.co.kr:7009/microsite/2018/tvcf/index.asp"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 11,
+    "fields": {
+        "name": "\ub9d8\uc2a4\ud130\uce58",
+        "image": "sponsors/momstouch.png",
+        "website_url": "http://www.momstouch.co.kr/main/main.php?ref=http%3A%2F%2Ftedx.postech.ac.kr%2Fsponsors.html"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 12,
+    "fields": {
+        "name": "\ub545\ub545\uce58\ud0a8",
+        "image": "sponsors/ddangddang.png",
+        "website_url": "http://www.codd.co.kr/site/"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 13,
+    "fields": {
+        "name": "\uc62c\ub808\ub728",
+        "image": "sponsors/aulete.jpg",
+        "website_url": null
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 14,
+    "fields": {
+        "name": "\uc624\uc140\ub86f",
+        "image": "sponsors/ocelot.png",
+        "website_url": null
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 15,
+    "fields": {
+        "name": "POSTECH BIC",
+        "image": "sponsors/bic.png",
+        "website_url": "http://iptt.postech.ac.kr/"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 16,
+    "fields": {
+        "name": "\ub77c\uba58 \ubca0\ub77c\ubcf4",
+        "image": "sponsors/beravo.jpg",
+        "website_url": "https://www.facebook.com/ramenberavo/?fref=ts"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 17,
+    "fields": {
+        "name": "\uc81c30\ub300 \ucd1d\ud559\uc0dd\ud68c \uc0ac\uc774\ub2e4",
+        "image": "sponsors/cider.png",
+        "website_url": "https://www.facebook.com/postechstu"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 18,
+    "fields": {
+        "name": "\ubb34\uc0ac\uc2dc",
+        "image": "sponsors/musasui.gif",
+        "website_url": "https://www.facebook.com/johnspub2421/?ref=br_rs"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 19,
+    "fields": {
+        "name": "\ud30c\uc2dc\uc57c",
+        "image": "sponsors/pasiya.png",
+        "website_url": "http://www.pasiya.co.kr/index.php"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 20,
+    "fields": {
+        "name": "\ud3ec\uc2a4\ud14d \ud559\uc0dd\uc9c0\uc6d0\ud300",
+        "image": "sponsors/postech.png",
+        "website_url": null
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 21,
+    "fields": {
+        "name": "\ub3c4\ubbf8\ub178\ud53c\uc790",
+        "image": "sponsors/domino.jpg",
+        "website_url": "http://www.dominos.co.kr/"
+    }
+},
+{
+    "model": "core.sponsor",
+    "pk": 22,
+    "fields": {
+        "name": "\ub9ac\uc624",
+        "image": "sponsors/rio.jpg",
+        "website_url": "https://store.naver.com/restaurants/detail?id=36957506"
+    }
+}
+]

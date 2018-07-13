@@ -1,0 +1,38 @@
+[
+{
+    "model": "core.homeimage",
+    "pk": 1,
+    "fields": {
+        "name": "FLUX",
+        "image": "home_images/flux_home_image.jpg",
+        "background_color": "#000000"
+    }
+},
+{
+    "model": "core.homeimage",
+    "pk": 2,
+    "fields": {
+        "name": "unlimited",
+        "image": "home_images/unlimited.jpg",
+        "background_color": "#000000"
+    }
+},
+{
+    "model": "core.homeimage",
+    "pk": 3,
+    "fields": {
+        "name": "question",
+        "image": "home_images/question.png",
+        "background_color": "#2A211E"
+    }
+},
+{
+    "model": "core.homeimage",
+    "pk": 4,
+    "fields": {
+        "name": "3rd organizer recruiting",
+        "image": "home_images/recruiting.png",
+        "background_color": "#F6F7F7"
+    }
+}
+]

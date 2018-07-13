@@ -1,0 +1,10 @@
+[
+{
+    "model": "core.setting",
+    "pk": 1,
+    "fields": {
+        "home_image": 1,
+        "event_now": 1
+    }
+}
+]
