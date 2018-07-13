@@ -1,87 +1,40 @@
 {% extends 'core/base.html' %}
 
 {% load static %}
+{% load humanize %}
 
 {% block main %}
 
 <main>
-  <div class="jumbotron" id="organizers">
+  <div class="jumbotron" style="background-image: url({{setting.event_now.organizers_photo.url}});">
     <div class="container">
       <h1 class="display-4">Organizers</h1>
-      <p class="lead">2017 TEDxPOSTECH을 준비한 8명의 4th Organizer들을 소개합니다.</p>
+      <p class="lead">{{setting.event_now.year}} TEDxPOSTECH을 준비한 {{organizers.length}}명의 {{setting.event_now.order|ordinal}} Organizer들을 소개합니다.</p>
     </div>
   </div>
 
-  <div class="organizers">
+  <div class="bg-grey border-top border-bottom my-5 py-4">
     <div class="container">
 
       <div class="row">
-        <div class="col-xs-1"></div>
-        <div class="col-xs-10">
-          <h3>Message from TEDxPOSTECH 4th Organizers</h3>
-          <p>안녕하세요. TEDxPOSTECH 네 번째 행사의 사회자를 맡게 된 김정수입니다.</p>
-          <p>Ideas worth spreading, 바로 TED의 모토입니다. 저희는 지난 TEDxPOSTECH 행사가 건네준 가치 있는 아이디어에 감명을 받아서, 또는 지난 행사에 참여하지는 못했지만 TED 자체에 흥미와 열정을 가지고 이번 네 번째 Organizer에 지원하였습니다. 저마다 다른 생각을 가지고 시작했지만, TED의 모토가 말하듯 가치 있는 아이디어를 교내 학우분들에게 들려주고 싶고 퍼트리고 싶다는 하나의 뜻으로 뭉쳤습니다. 긴 시간 동안 정성을 들여 본 행사를 준비했습니다. 이제 여러분에게 그 결과를 보여줄 수 있어서 정말 영광스럽고 기대가 됩니다.</p>
-          <p>이번 행사의 큰 주제는 바로 FLUX입니다. 그 사전적 의미는 유동, 흐름, 끊임없는 변화이지만 공대생이라면 단위시간당 수직이동하는 물리량을 의미하는 개념을 생각할 수도 있겠습니다. 저희는 FLUX의 의미 중에서도 ‘끊임없는 소통과 연결’ 에 초점을 두고 있습니다. 사람과 사람의 연결, 매체를 통한 소통, 내면과의 소통 등 소통의 수단과 다양화라는 주제를 관통하는 가치 있는 아이디어를 여러 분야의 연사 분들을 통해 제공하고자 합니다.</p>
-          <p>올해 11월 4일 토요일, 네 번째 TEDxPOSTECH에서 준비한 아이디어와 소통으로 여러분이 조금이라도 변화를 맞이할 계기가 될 수 있다면 저희에겐 아주 가치 있는 일이 될 것입니다.</p>
-          <p>감사합니다.</p>
-          <p id="right-align">TEDxPOSTECH 4th Organizer</p>
-          <p id="right-align">일동 올림.</p>
-          <div class="col-xs-1"></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-3">
-          <div class="profile center-block">
-            <img src="./images/organizers/2017/rhdghkstjr.jpg" class="img-circle center-block">
-            <p class="center-block">공환석<br>LIFE 16</p>
-          </div>
-        </div>
-        <div class="col-xs-3">
-          <div class="profile center-block">
-            <img src="./images/organizers/2017/rlawjdtn.jpg" class="img-circle center-block">
-            <p class="center-block">김정수<br>PCE 16</p>
-          </div>
-        </div>
-        <div class="col-xs-3">
-          <div class="profile center-block">
-            <img src="./images/organizers/2017/dbscofla.jpg" class="img-circle center-block">
-            <p class="center-block">윤채림<br>LIFE 16</p>
-          </div>
-        </div>
-        <div class="col-xs-3">
-          <div class="profile center-block">
-            <img src="./images/organizers/2017/dlwngus.jpg" class="img-circle center-block">
-            <p class="center-block">이주현<br>LIFE 16</p>
+        <div class="col-sm-12 col-lg-10 offset-lg-1">
+          <h3>{{setting.event_now.letter_title}}</h3>
+          {{setting.event_now.letter_text|linebreaks}}
+          <div class="text-right">
+            {{setting.event_now.letter_end|linebreaks}}
           </div>
         </div>
       </div>
 
-      <div class="row" id="last">
-        <div class="col-xs-3">
-          <div class="profile center-block">
-            <img src="./images/organizers/2017/dlghwjd.jpg" class="img-circle center-block">
-            <p class="center-block">이호정<br>CHEM 15</p>
+      <div class="row no-gutters">
+        {% for organizer in organizers %}
+        <div class="col-sm-6 col-md-3 mb-3 visible-hover blur-hover">
+          <div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+            <h3 class="text-center font-weight-bold">{{organizer.name}}<br>{{organizer.department.abbreviation}} {{organizer.entered_year}}</h3>
           </div>
+          <img src="{{ organizer.image.url }}" class="border border-thick img-fluid rounded-circle mx-auto my-auto d-block">
         </div>
-        <div class="col-xs-3">
-          <div class="profile center-block">
-            <img src="./images/organizers/2017/dlawnsdud.jpg" class="img-circle center-block">
-            <p class="center-block">임준영<br>ME 16</p>
-          </div>
-        </div>
-        <div class="col-xs-3">
-          <div class="profile center-block">
-            <img src="./images/organizers/2017/chltnwl.jpg" class="img-circle center-block">
-            <p class="center-block">최수지<br>LIFE 16</p>
-          </div>
-        </div>
-        <div class="col-xs-3">
-          <div class="profile center-block">
-            <img src="./images/organizers/2017/chlgPdnjs.jpg" class="img-circle center-block">
-            <p class="center-block">최혜원<br>LIFE 16</p>
-          </div>
-        </div>
+        {% endfor %}
       </div>
 
     </div>

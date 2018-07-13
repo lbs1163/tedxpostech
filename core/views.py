@@ -16,7 +16,9 @@ def speakers(request):
     return render(request, "core/speakers.html", {'setting': setting, 'speakers': speakers})
 
 def organizers(request):
-    return render(request, "core/organizers.html", {})
+    setting = Setting.objects.all().first()
+    organizers = setting.event_now.organizer_set.all().order_by('name')
+    return render(request, "core/organizers.html", {'setting': setting, 'organizers': organizers})
 
 def sponsors(request):
     return render(request, "core/sponsors.html", {})

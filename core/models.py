@@ -26,6 +26,7 @@ class Sponsor(models.Model):
 
 class Event(models.Model):
     year = models.PositiveSmallIntegerField()
+    order = models.PositiveSmallIntegerField()
     date = models.DateField()
     place = models.CharField(max_length=50)
     start_at = models.TimeField()
@@ -45,6 +46,8 @@ class Event(models.Model):
     theme_explanation = models.TextField(null=True, blank=True)
     letter_title = models.CharField(max_length=100, null=True, blank=True)
     letter_text = models.TextField(null=True, blank=True)
+    letter_end = models.TextField(null=True, blank=True)
+    organizers_photo = models.ImageField(null=True, blank=True, upload_to='organizers')
     sponsors = models.ManyToManyField(Sponsor, blank=True)
 
     def is_end(self):
