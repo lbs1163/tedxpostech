@@ -1,0 +1,94 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block main %}
+<main>
+
+  <div class="jumbotron" style="background-image: url({{event.organizers_photo.url}});">
+    <div class="container">
+      <h1 class="display-4">{{event.year}}<br>TEDxPOSTECH</h1>
+      <p class="lead">{{event.year}} TEDxPOSTECH을 빛내주셨던 연사분들과 Organizer들을 소개합니다.</p>
+    </div>
+  </div>
+
+  <div class="bg-grey border-top border-bottom pt-4 pb-3 my-5">
+    <div class="container">
+      <h3>{{event.year}} TEDxPOSTECH {{event.theme}}</h3>
+      {{event.theme_explanation|linebreaks}}
+    </div>
+  </div>
+
+  <div class="my-5 py-4">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-sm-12 col-lg-10 offset-lg-1">
+          <h3>{{event.letter_title}}</h3>
+          {{event.letter_text|linebreaks}}
+          <div class="text-right">
+            {{event.letter_end|linebreaks}}
+          </div>
+        </div>
+      </div>
+
+      <div class="row no-gutters">
+        {% for organizer in organizers %}
+        <div class="col-sm-6 col-md-3 mb-3 visible-hover blur-hover">
+          <div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+            <h3 class="text-center font-weight-bold">{{organizer.name}}<br>{{organizer.department.abbreviation}} {{organizer.entered_year}}</h3>
+          </div>
+          <img src="{{ organizer.image.url }}" class="border border-thick img-fluid rounded-circle mx-auto my-auto d-block">
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+
+  <div class="bg-grey border-top border-bottom my-5">
+    <div class="container">
+
+      {% for speaker in speakers %}
+      {% if speaker.youtube_url %}
+      <div class="embed-responsive embed-responsive-16by9 mt-4">
+        <iframe class="embed-responsive-item" src="{{speaker.youtube_url}}"></iframe>
+      </div>
+      {% endif %}
+      <div class="row border-bottom border-last-child-0 py-4 align-items-center">
+        <div class="col-sm-12 col-md-4">
+          <img src="{{ speaker.image.url }}" class="border border-thick img-fluid rounded-circle mx-auto my-auto d-block">
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <h3 class="text-center text-md-left mt-2">{{ speaker.name }}</h3>
+          {{ speaker.explanation|linebreaks }}
+        </div>
+      </div>
+      {% endfor %}
+
+    </div>
+  </div>
+  
+  <div class="container">
+    
+    <img src="{% static 'core/images/biglogo.png' %}" class="img-fluid mx-auto mb-4 d-block">
+    <h2 class="text-center">with</h2>
+
+    <div class="card-columns">
+      {% for sponsor in sponsors %}
+      <div class="card border-0">
+        {% if sponsor.website_url %}
+        <a href="{{sponsor.website_url}}" target="_blank">
+          <img class="card-img p-4" src="{{sponsor.image.url}}" alt="{{sponsor.name}}">
+        </a>
+        {% else %}
+        <img class="card-img p-4" src="{{sponsor.image.url}}" alt="{{sponsor.name}}">
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+  </div>
+
+</main>
+{% endblock %}

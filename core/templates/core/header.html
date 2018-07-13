@@ -12,76 +12,76 @@
         <div class="collapse navbar-collapse" id="mainNav">
             <ul class="navbar-nav ml-auto">
 
-                {% if request.resolver_match.url_name == 'home' %}
-                <li class="nav-item">
-                    <a class="nav-link active" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
-                </li>
-                {% else %}
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'home' %}">Home</a>
-                </li>
-                {% endif %}
 
-                {% if request.resolver_match.url_name == 'about' %}
                 <li class="nav-item">
+                    {% if request.resolver_match.url_name == 'home' %}
+                    <a class="nav-link active" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                    {% else %}
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    {% endif %}
+                </li>
+                
+                <li class="nav-item">
+                    {% if request.resolver_match.url_name == 'about' %}
                     <a class="nav-link active" href="{% url 'about' %}">About <span class="sr-only">(current)</span></a>
-                </li>
-                {% else %}
-                <li class="nav-item">
+                    {% else %}
                     <a class="nav-link" href="{% url 'about' %}">About</a>
+                    {% endif %}
                 </li>
-                {% endif %}
 
                 <li class="nav-item dropdown">
+                    {% if request.resolver_match.url_name == 'pastevent' %}
+                    <a class="nav-link dropdown-toggle active" href="#" id="pastEventsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Past Events
+                    </a>
+                    {% else %}
                     <a class="nav-link dropdown-toggle" href="#" id="pastEventsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Past Events
                     </a>
+                    {% endif %}
                     <div class="dropdown-menu" aria-labelledby="pastEventsDropdown">
-                        <a class="dropdown-item" href="#">2016 TEDxPOSTECH</a>
-                        <a class="dropdown-item" href="#">2015 TEDxPOSTECH</a>
-                        <a class="dropdown-item" href="#">2011 TEDxPOSTECH</a>
+                        {% for past_event in past_events %}
+                        {% if request.resolver_match.url_name == 'pastevent' and request.resolver_match.kwargs.year == past_event.year %}
+                        <a class="dropdown-item active" href="{% url 'pastevent' past_event.year %}">{{past_event.year}} TEDxPOSTECH <span class="sr-only">(current)</span></a>
+                        {% else %}
+                        <a class="dropdown-item" href="{% url 'pastevent' past_event.year %}">{{past_event.year}} TEDxPOSTECH</a>
+                        {% endif %}
+                        {% endfor %}
                     </div>
                 </li>
 
-                {% if request.resolver_match.url_name == 'speakers' %}
                 <li class="nav-item">
+                    {% if request.resolver_match.url_name == 'speakers' %}
                     <a class="nav-link active" href="{% url 'speakers' %}">Speakers <span class="sr-only">(current)</span></a>
-                </li>
-                {% else %}
-                <li class="nav-item">
+                    {% else %}
                     <a class="nav-link" href="{% url 'speakers' %}">Speakers</a>
+                    {% endif %}
                 </li>
-                {% endif %}
 
-                {% if request.resolver_match.url_name == 'organizers' %}
                 <li class="nav-item">
+                    {% if request.resolver_match.url_name == 'organizers' %}
                     <a class="nav-link active" href="{% url 'organizers' %}">Organizers <span class="sr-only">(current)</span></a>
-                </li>
-                {% else %}
-                <li class="nav-item">
+                    {% else %}
                     <a class="nav-link" href="{% url 'organizers' %}">Organizers</a>
+                    {% endif %}
                 </li>
-                {% endif %}
 
-                {% if request.resolver_match.url_name == 'sponsors' %}
                 <li class="nav-item">
+                    {% if request.resolver_match.url_name == 'sponsors' %}
                     <a class="nav-link active" href="{% url 'sponsors' %}">Sponsors <span class="sr-only">(current)</span></a>
-                </li>
-                {% else %}
-                <li class="nav-item">
+                    {% else %}
                     <a class="nav-link" href="{% url 'sponsors' %}">Sponsors</a>
+                    {% endif %}
                 </li>
-                {% endif %}
 
-                {% if request.resolver_match.url_name == 'register' %}
+
                 <li class="nav-item">
+                    {% if request.resolver_match.url_name == 'register' %}
                     <a class="nav-link active" href="{% url 'register' %}">Register <span class="sr-only">(current)</span></a>
-                </li>
-                {% else %}
-                <li class="nav-item">
+                    {% else %}
                     <a class="nav-link" href="{% url 'register' %}">Register</a>
+                    {% endif %}
                 </li>
-                {% endif %}
 
             </ul>
         </div>

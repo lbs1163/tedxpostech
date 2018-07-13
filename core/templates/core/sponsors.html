@@ -11,27 +11,26 @@
     </div>
   </div>
 
-  <div class="sponsors">
-    <div class="container">
-      
-      <img src="{% static 'core/images/biglogo.png' %}" class="img-fluid mx-auto mb-4 d-block">
-      <h2 class="text-center">with</h2>
+  <div class="container">
+    
+    <img src="{% static 'core/images/biglogo.png' %}" class="img-fluid mx-auto mb-4 d-block">
+    <h2 class="text-center">with</h2>
 
-      <div class="card-columns">
-        {% for sponsor in sponsors %}
-        <div class="card border-0">
-          {% if sponsor.website_url %}
-          <a href="{{sponsor.website_url}}" target="_blank">
-            <img class="card-img p-4" src="{{sponsor.image.url}}" alt="{{sponsor.name}}">
-          </a>
-          {% else %}
+    <div class="card-columns">
+      {% for sponsor in sponsors %}
+      <div class="card border-0">
+        {% if sponsor.website_url %}
+        <a href="{{sponsor.website_url}}" target="_blank">
           <img class="card-img p-4" src="{{sponsor.image.url}}" alt="{{sponsor.name}}">
-          {% endif %}
-        </div>
-        {% endfor %}
+        </a>
+        {% else %}
+        <img class="card-img p-4" src="{{sponsor.image.url}}" alt="{{sponsor.name}}">
+        {% endif %}
       </div>
-
+      {% endfor %}
     </div>
+
   </div>
+
 </main>
 {% endblock %}

@@ -76,7 +76,7 @@ header a {
   text-transform: uppercase;
 }
 
-header a.nav-link.active {
+header a.active {
   font-weight: bold;
   color: red !important;
 }
@@ -89,6 +89,10 @@ header .navbar-expand-lg .navbar-nav .nav-link {
 
 header > nav li > a:focus, header > nav li > a:hover {
   background-color: #eee;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: transparent;
 }
 
 /* FOOTER */

@@ -1,6 +1,12 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
+from django.http import Http404
 from .models import *
 import datetime
+
+def navbar_context_processor(request):
+    setting = Setting.objects.all().first()
+    past_events = Event.objects.filter(year__lt=setting.event_now.year).order_by('year')
+    return {'setting': setting, 'past_events': past_events}
 
 def home(request):
     setting = Setting.objects.all().first()
@@ -11,8 +17,15 @@ def about(request):
     event = setting.event_now
     return render(request, "core/about.html", {'event': event})
 
-def pastevent(request):
-    return render(request, "core/pastevent.html", {})
+def pastevent(request, year):
+    setting = Setting.objects.all().first()
+    if year >= setting.event_now.year:
+        raise Http404()
+    event = get_object_or_404(Event, year=year)
+    organizers = event.organizer_set.all().order_by('name')
+    speakers = event.speaker_set.all().order_by('published_datetime')
+    sponsors = event.sponsors.all()
+    return render(request, "core/pastevent.html", {'event': event, 'organizers': organizers, 'speakers': speakers, 'sponsors': sponsors})
 
 def speakers(request):
     setting = Setting.objects.all().first()

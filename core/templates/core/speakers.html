@@ -19,6 +19,11 @@
     <div class="container">
 
       {% for speaker in speakers %}
+      {% if speaker.youtube_url %}
+      <div class="embed-responsive embed-responsive-16by9 mt-4">
+        <iframe class="embed-responsive-item" src="{{speaker.youtube_url}}"></iframe>
+      </div>
+      {% endif %}
       <div class="row border-bottom border-last-child-0 py-4 align-items-center">
         <div class="col-sm-12 col-md-4">
           <img src="{{ speaker.image.url }}" class="border border-thick img-fluid rounded-circle mx-auto my-auto d-block">
