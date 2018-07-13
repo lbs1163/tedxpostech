@@ -6,7 +6,9 @@ def home(request):
     return render(request, "core/home.html", {'setting': setting})
 
 def about(request):
-    return render(request, "core/about.html", {})
+    setting = Setting.objects.all().first()
+    event = setting.event_now
+    return render(request, "core/about.html", {'event': event})
 
 def pastevent(request):
     return render(request, "core/pastevent.html", {})
@@ -27,4 +29,6 @@ def sponsors(request):
     return render(request, "core/sponsors.html", {'setting': setting, 'sponsors': sponsors})
 
 def register(request):
-    return render(request, "core/register.html", {})
+    setting = Setting.objects.all().first()
+    event = setting.event_now
+    return render(request, "core/register.html", {'event': event})
