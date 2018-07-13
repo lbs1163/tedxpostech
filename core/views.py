@@ -1,5 +1,7 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import Http404
+from django.contrib.auth import logout
+from django.contrib.auth.decorators import login_required
 from .models import *
 import datetime
 
@@ -48,3 +50,11 @@ def register(request):
     t = ['월', '화', '수', '목', '금', '토', '일']
     day = t[event.date.weekday()]
     return render(request, "core/register.html", {'event': event, 'day': day})
+
+@login_required
+def help(request):
+    return render(request, "core/help.html", {})
+
+def logout_view(request):
+    logout(request)
+    return redirect('home')
