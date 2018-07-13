@@ -96,21 +96,22 @@ header > nav li > a:focus, header > nav li > a:hover {
 }
 
 .back-to-top {
-  background: none;
+  background: white;
   bottom: 0;
   right: 0;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   z-index: 100;
   color: rgb(255, 43, 6);
 }
 
 .back-to-top:hover {
   color: rgb(255, 43, 6);
+  text-decoration: none;
 }
 
 .back-to-top i {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 /* FOOTER */
