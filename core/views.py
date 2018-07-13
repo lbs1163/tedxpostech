@@ -22,7 +22,9 @@ def organizers(request):
     return render(request, "core/organizers.html", {'setting': setting, 'organizers': organizers})
 
 def sponsors(request):
-    return render(request, "core/sponsors.html", {})
+    setting = Setting.objects.all().first()
+    sponsors = setting.event_now.sponsors.all()
+    return render(request, "core/sponsors.html", {'setting': setting, 'sponsors': sponsors})
 
 def register(request):
     return render(request, "core/register.html", {})
