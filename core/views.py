@@ -5,7 +5,7 @@ import datetime
 
 def navbar_context_processor(request):
     setting = Setting.objects.all().first()
-    past_events = Event.objects.filter(year__lt=setting.event_now.year).order_by('year')
+    past_events = Event.objects.filter(year__lt=setting.event_now.year).order_by('-year')
     return {'setting': setting, 'past_events': past_events}
 
 def home(request):
