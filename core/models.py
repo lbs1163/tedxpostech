@@ -1,5 +1,6 @@
 from django.db import models
 from datetime import date
+from django.utils import timezone
 
 class HomeImage(models.Model):
     name = models.CharField(max_length=50)
@@ -73,6 +74,9 @@ class Speaker(models.Model):
     explanation = models.TextField(null=True, blank=True)
     youtube_url = models.CharField(max_length=100, null=True, blank=True)
     published_datetime = models.DateTimeField()
+
+    def is_published(self):
+        return timezone.now() > self.published_datetime
 
     def __str__(self):
         return str(self.event) + " " + self.name

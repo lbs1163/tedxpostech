@@ -19,7 +19,11 @@
     <div class="container">
 
       {% for speaker in speakers %}
+
+      {% if speaker.is_published %}
+
       {% if speaker.youtube_url %}
+
       <div class="embed-responsive embed-responsive-16by9 mt-4">
         <iframe class="embed-responsive-item" src="{{speaker.youtube_url}}"></iframe>
       </div>
@@ -33,6 +37,20 @@
           {{ speaker.explanation|linebreaks }}
         </div>
       </div>
+
+      {% else %}
+
+      <div class="row border-bottom border-last-child-0 py-4 align-items-center">
+        <div class="col-sm-12 col-md-4">
+          <img src="{% static 'core/images/speakers_comingsoon.png' %}" class="border border-thick img-fluid rounded-circle mx-auto my-auto d-block">
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <h1 class="text-center">Coming Soon!</h1>
+        </div>
+      </div>
+
+      {% endif %}
+
       {% endfor %}
 
     </div>
